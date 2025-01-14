@@ -155,34 +155,29 @@
     }
 
     .text-line {
-    stroke-dasharray: 500;
-    stroke-dashoffset: 500;
-    animation: dash 5s linear forwards, filling 5s ease-in forwards;
-    font-size: 80px;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation: dash 5s linear forwards, filling 5s ease-in forwards;
+        font-size: 80px;
     }
 
     .text-line text {
-    font-family: 'Pacifico', cursive;
-    fill: url(#gradient);
-    stroke: url(#gradient);
-    stroke-width: 2;
-    font-weight: normal;
-    font-style: normal;
-    }
-
-    .text-2xs {
-        font-size: 0.625rem;
-        line-height: 1rem;
+        font-family: 'Pacifico', cursive;
+        fill: url(#gradient);
+        stroke: url(#gradient);
+        stroke-width: 2;
+        font-weight: normal;
+        font-style: normal;
     }
 
     @keyframes dash {
-    to {
-        stroke-dashoffset: 0;
-    }
+        to {
+            stroke-dashoffset: 0;
+        }
     }
 
     @keyframes filling {
-    0%, 90% { fill-opacity: 0; }
-    100% { fill-opacity: 1; }
+        0%, 90% { fill-opacity: 0; }
+        100% { fill-opacity: 1; }
     }
 </style>
