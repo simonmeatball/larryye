@@ -29,7 +29,10 @@
     }
 </script>
 
-<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+
 
 <svg stroke="#bac736" stroke-width="2" class="pt-6 text-line max-h-32 sm:h-30" width="100%">
     <defs>
@@ -68,18 +71,20 @@
             />
         </div>
         <div 
-            class="backside space-y-4 justify-center items-center"
+            class="backside flex justify-center items-center align-middle"
             style="transform: rotateY(180deg) rotateX({y * 10}deg) rotateY({x * 10}deg);"
             on:mousemove={handleMouseMove}
             on:mouseleave={resetTransform}
         >
-            <h1 class="text-4xl sm:text-5xl md:text-5xl lg:text-5xl xs:text-4xl w-full">About Me</h1>
-            <p class="max-w-fit">Hello, I'm Larry Ye! I'm an electrical engineer and photographer based in the Bay Area. I'm passionate about creating beautiful and functional software, and I love capturing moments through photography. I'm always looking for new opportunities to learn and grow, so feel free to reach out to me!</p>
+            <div class="align-middle space-y-4">
+                <h1 class="text-3xl sm:text-5xl md:text-5xl lg:text-5xl xs:text-4xl w-full text-center">Who am I?</h1>
+                <p class="max-w-fit font-mono text-xs lg:text-xl lg:pt-3 lg:px-3 md:text-xl md:pt-3 sm:text-lg sm:pt-4 xs:text-sm">Hello, I'm Larry! I'm an electrical engineer and photographer based in the Bay Area. I'm passionate about creating beautiful and functional software, building cool electrical projects, and capturing unique moments through photography. I'm always looking for new opportunities to learn and grow, so feel free to reach out to me!</p>
+            </div>
         </div>
     </div>
 </div>
 
-<div class="flex justify-center py-6 space-x-5">
+<div class="flex flex-shrink justify-center py-6 space-x-5">
     <a href="https://www.linkedin.com/in/larryye05/"><Linkedin size="48" class="hover:stroke-[#DF0024]" /></a>
     <a href="https://github.com/simonmeatball"><Github size="48" class="hover:stroke-[#F3C300]" /></a>
     <a href="https://www.instagram.com/lye_photo"><Instagram size="48" class="hover:stroke-[#00AC9F]" /></a>
@@ -89,7 +94,7 @@
 
 <style>
     .image-container {
-        perspective: 1200px;
+        perspective: 1000px;
     }
 
     .transform-wrapper {
@@ -113,7 +118,7 @@
         height: 100%;
         backface-visibility: hidden;
         border-radius: 1.5rem;
-        transition: transform 0.2s ease;
+        transition: transform 0.15s ease;
         font-family: 'Pacifico', cursive;
     }
 
@@ -130,8 +135,8 @@
         transform: rotateY(180deg);
         width: auto;
         height: vh;
-        padding: 50px;
-        text-align: center;
+        padding: 30px;
+        text-align: left;
     }
 
     img {
@@ -163,6 +168,11 @@
     stroke-width: 2;
     font-weight: normal;
     font-style: normal;
+    }
+
+    .text-2xs {
+        font-size: 0.625rem;
+        line-height: 1rem;
     }
 
     @keyframes dash {
