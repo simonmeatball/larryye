@@ -1,4 +1,6 @@
 <script>
+  import { goto } from "$app/navigation";
+
     export let label = "Click Me";
     export let onClick = () => {};
     export let disabled = false;
@@ -47,6 +49,7 @@
     class="{className} rounded-full interactive-element hover-lift gradient-border-base"
     on:click={handleClick}
     disabled={disabled}
+    on:click={() => goto(href)}
 >
     <span class="gradient-text">{label}</span>
 </button>

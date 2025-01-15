@@ -79,7 +79,7 @@
         >
             <div class="align-middle space-y-4">
                 <h1 class="text-3xl sm:text-5xl md:text-5xl lg:text-5xl xs:text-4xl w-full text-center">Who am I?</h1>
-                <p class="max-w-fit font-mono text-xs lg:text-xl lg:pt-3 lg:px-3 md:text-xl md:pt-3 sm:text-lg sm:pt-4 xs:text-sm">Hello, I'm Larry! I'm an electrical engineer and photographer based in the Bay Area. I'm passionate about creating beautiful and functional software, building cool electrical projects, and capturing unique moments through photography. I'm always looking for new opportunities to learn and grow, so feel free to reach out to me!</p>
+                <p class="max-w-fit font-mono text-xs lg:text-xl lg:pt-3 lg:px-3 md:text-xl md:pt-3 sm:text-lg sm:pt-4 xs:text-sm">Hello, I'm Larry! I'm an electrical engineer, photographer, and foodie based in the Bay Area. I'm passionate about creating beautiful and functional software, building cool electrical projects, and capturing unique moments through photography. I'm always looking for new opportunities to learn and grow, so feel free to reach out to me!</p>
             </div>
         </div>
     </div>
@@ -91,10 +91,11 @@
     <a href="https://www.instagram.com/lye_photo"><Instagram size="48" class="hover:stroke-[#00AC9F] hover-lift" /></a>
     <a href="https://www.yelp.com/user_details?userid=UC4NN00SeDcn5C74wdwbTw"><Utensils size="48" class="hover:stroke-[#2E6DB4] hover-lift" /></a>
 </div>
-<!-- 
-<div class="flex justify-center pb-6">
-    <Button label="Projects" className="mx-auto" />
-</div> -->
+
+<div class="flex justify-center pb-6 space-x-4">
+    <Button label="Projects" href="/projects" />
+    <Button label="Resume" href="/resume" />
+</div>
 
 
 <style>
@@ -150,39 +151,11 @@
         max-width: 90vw;
     }
 
-
     .max-h-screen {
         max-height: 90vh;
     }
 
     .max-w-screen {
         max-width: 70vw;
-    }
-
-    .text-line {
-        stroke-dasharray: 500;
-        stroke-dashoffset: 500;
-        animation: dash 5s linear forwards, filling 5s ease-in forwards;
-        font-size: 80px;
-    }
-
-    .text-line text {
-        font-family: 'Pacifico', cursive;
-        fill: url(#gradient);
-        stroke: url(#gradient);
-        stroke-width: 2;
-        font-weight: normal;
-        font-style: normal;
-    }
-
-    @keyframes dash {
-        to {
-            stroke-dashoffset: 0;
-        }
-    }
-
-    @keyframes filling {
-        0%, 90% { fill-opacity: 0; }
-        100% { fill-opacity: 1; }
     }
 </style>
