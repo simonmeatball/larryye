@@ -3,6 +3,7 @@
     import { Linkedin } from 'lucide-svelte';
     import { Github } from 'lucide-svelte';
     import { Utensils } from 'lucide-svelte';
+    import Button from '../components/Button.svelte';
     
     let x = 0, y = 0;
     let width = 0, height = 0;
@@ -85,11 +86,15 @@
 </div>
 
 <div class="flex flex-shrink justify-center py-6 space-x-5">
-    <a href="https://www.linkedin.com/in/larryye05/"><Linkedin size="48" class="hover:stroke-[#DF0024]" /></a>
-    <a href="https://github.com/simonmeatball"><Github size="48" class="hover:stroke-[#F3C300]" /></a>
-    <a href="https://www.instagram.com/lye_photo"><Instagram size="48" class="hover:stroke-[#00AC9F]" /></a>
-    <a href="https://www.yelp.com/user_details?userid=UC4NN00SeDcn5C74wdwbTw"><Utensils size="48" class="hover:stroke-[#2E6DB4]" /></a>
+    <a href="https://www.linkedin.com/in/larryye05/"><Linkedin size="48" class="hover:stroke-[#DF0024] hover-lift" /></a>
+    <a href="https://github.com/simonmeatball"><Github size="48" class="hover:stroke-[#F3C300] hover-lift" /></a>
+    <a href="https://www.instagram.com/lye_photo"><Instagram size="48" class="hover:stroke-[#00AC9F] hover-lift" /></a>
+    <a href="https://www.yelp.com/user_details?userid=UC4NN00SeDcn5C74wdwbTw"><Utensils size="48" class="hover:stroke-[#2E6DB4] hover-lift" /></a>
 </div>
+<!-- 
+<div class="flex justify-center pb-6">
+    <Button label="Projects" className="mx-auto" />
+</div> -->
 
 
 <style>
