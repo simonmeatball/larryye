@@ -46,7 +46,7 @@
 </script>
 
 <button
-    class="{className} rounded-full interactive-element hover-lift gradient-border-base"
+    class="{className} rounded-full interactive-element hover-lift gradient-border-base font-mono"
     on:click={handleClick}
     disabled={disabled}
     on:click={() => goto(href)}
