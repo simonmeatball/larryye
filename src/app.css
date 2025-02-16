@@ -14,9 +14,20 @@
   }
 }
 
+h3 {
+  @apply text-2xl font-bold;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+}
+
 body {
   background: black;
   color: white;
+}
+
+img {
+  width: 100%;
+  height: auto;
 }
 
 /* Interactive Elements */
@@ -46,7 +57,8 @@ body {
   border: 2px solid white;
 }
 
-.gradient-border-base:hover {
+.gradient-border-base:hover,
+.gradient-border-base.active {
   border: double 2px transparent;
   background-image: linear-gradient(black, black),
     linear-gradient(to bottom, #ff0000, #ffa500);
@@ -60,7 +72,8 @@ body {
 }
 
 /* Add new parent-based hover effect */
-.gradient-border-base:hover .gradient-text {
+.gradient-border-base:hover .gradient-text,
+.gradient-border-base.active .gradient-text {
   background: linear-gradient(to bottom, #ff0000, #ffa500);
   -webkit-background-clip: text;
   background-clip: text;

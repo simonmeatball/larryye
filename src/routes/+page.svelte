@@ -51,6 +51,8 @@
 </text>
 </svg>
 
+<p class="w-full text-center font-mono text-slate-500 pt-1 fade-in">Scroll for more or click the image to learn more about me</p>
+
 <div class="image-container flex justify-center my-4">
     <!-- svelte-ignore a11y_click_events_have_key_events -->
     <!-- svelte-ignore a11y_no_static_element_interactions -->
@@ -157,5 +159,22 @@
 
     .max-w-screen {
         max-width: 70vw;
+    }
+
+    .fade-in {
+        opacity:0;
+        animation-name: fadeIn;
+        animation-duration: 2s;
+        animation-delay: 5s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
     }
 </style>
