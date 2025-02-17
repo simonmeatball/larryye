@@ -51,7 +51,7 @@
 </text>
 </svg>
 
-<p class="w-full text-center font-mono text-slate-500 pt-1 fade-in">Scroll for more or click the image to learn more about me</p>
+<p class="w-full text-center font-mono text-slate-500 pt-1 fade-in">Scroll for more or click the image to learn about me</p>
 
 <div class="image-container flex justify-center my-4">
     <!-- svelte-ignore a11y_click_events_have_key_events -->

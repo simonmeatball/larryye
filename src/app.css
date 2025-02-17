@@ -20,6 +20,10 @@ h3 {
     "Liberation Mono", "Courier New", monospace;
 }
 
+a {
+  @apply underline hover:text-gray-300;
+}
+
 body {
   background: black;
   color: white;
