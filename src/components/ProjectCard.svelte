@@ -50,7 +50,7 @@
         </div>
         <div class="content">
             <h3 class="pb-3 max-xs:text-xl">{projectName}</h3>
-            <img src={img} alt="{projectName} Image" class="rounded-lg w-full object-cover object-top max-h-[60vh] mb-4 max-w-full max-sm:h-[40vh]" />
+            <img src={img} alt="{projectName} Image" class="rounded-lg w-full object-cover object-top max-h-[60vh] mb-4 max-sm:max-h-[40vh]" />
             <p class="font-mono max-xs:text-sm">{@html description}</p>
         </div>
     </div>
