@@ -1,5 +1,15 @@
 <script>
     import Button from '../../components/Button.svelte';
+    import SmallButton from '../../components/SmallButton.svelte';
+
+    let activeTab = 'hardware'; // Default tab
+    
+    /**
+   * @param {string} tab
+   */
+    function switchTab(tab) {
+        activeTab = tab;
+    }
 </script>
 
 <head>
@@ -23,6 +33,23 @@
 </svg>
 
 <div class="justify-center text-center w-full pb-5">
-    <img src="/UCLA Resume - Larry Ye (Hardware).jpg" alt="Larry Ye's resume" class="w-10/12 md:w-1/2 mx-auto my-4" />
+    <div class="justify-center text-center w-full py-5 space-x-4">
+        <SmallButton
+            label="Hardware"
+            className={activeTab === 'hardware' ? 'active' : ''}
+            onClick={() => switchTab('hardware')}
+        />
+        <SmallButton
+            label="Software"
+            className={activeTab === 'software' ? 'active' : ''}
+            onClick={() => switchTab('software')}
+        />
+    </div>
+
+    {#if activeTab === 'hardware'}
+        <img src="/UCLA Resume - Larry Ye (Hardware).jpg" alt="Larry Ye's resume" class="w-10/12 md:w-1/2 mx-auto my-4" />
+    {:else}
+        <img src="/UCLA Resume - Larry Ye (Software).jpg" alt="Larry Ye's resume" class="w-10/12 md:w-1/2 mx-auto my-4" />
+    {/if}
     <Button label="Return Home" href="/" />
 </div>
