@@ -38,29 +38,12 @@
     }
 </script>
 
-<head>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-</head>
-
 <main class="min-h-screen min-h-[100dvh] h-screen h-[100dvh] w-full flex flex-col justify-center items-center gap-2 sm:gap-3 py-2 sm:py-3 px-3 sm:px-4 box-border text-center overflow-y-auto overflow-x-hidden">
     <!-- Top Header & Prompt -->
-    <div class="w-full flex flex-col items-center shrink-0">
-        <svg stroke="#bac736" stroke-width="2" class="text-line max-h-12 sm:max-h-16 md:max-h-20" width="100%">
-            <defs>
-                <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
-                    <stop offset="0%" stop-color="#f3ec78" />
-                    <stop offset="100%" stop-color="#af4261" />
-                </linearGradient>
-            </defs>
-            <text 
-                class="text-center text-3xl sm:text-5xl md:text-6xl" 
-                x="50%" 
-                y="50%" 
-                dominant-baseline="middle" 
-                text-anchor="middle">
-                Hi! I'm Larry Ye
-            </text>
-        </svg>
+    <div class="w-full flex flex-col items-center shrink-0 pt-1 pb-0.5">
+        <h1 class="gradient-title text-3xl sm:text-5xl md:text-6xl font-bold tracking-normal select-none">
+            Hi! I'm Larry Ye
+        </h1>
 
         <div class="w-full flex justify-center pt-0.5">
             <p class="typewriter font-mono text-slate-400 text-xs sm:text-sm">
@@ -122,6 +105,18 @@
 </main>
 
 <style>
+    .gradient-title {
+        font-family: 'Pacifico', cursive;
+        background: linear-gradient(180deg, #f3ec78 0%, #af4261 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        color: #f3ec78; /* Fallback for browsers without text-fill-color */
+        line-height: 1.25;
+        margin: 0;
+        padding: 0 0.5rem;
+    }
+
     .image-container {
         perspective: 1000px;
         width: 100%;
