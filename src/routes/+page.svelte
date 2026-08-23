@@ -40,8 +40,8 @@
 
 <main class="min-h-screen min-h-[100dvh] h-screen h-[100dvh] w-full flex flex-col justify-center items-center gap-2 sm:gap-3 py-2 sm:py-3 px-3 sm:px-4 box-border text-center overflow-y-auto overflow-x-hidden">
     <!-- Top Header & Prompt -->
-    <div class="w-full flex flex-col items-center shrink-0 pt-0.5 pb-0.5 max-w-lg md:max-w-xl">
-        <svg stroke="#bac736" stroke-width="2" class="text-line h-12 sm:h-16 md:h-20 w-full" viewBox="0 0 680 110">
+    <div class="w-full flex flex-col items-center shrink-0 pt-0.5 pb-0.5 max-w-sm sm:max-w-lg md:max-w-xl">
+        <svg stroke="#bac736" stroke-width="2" class="text-line h-16 sm:h-20 md:h-24 w-full" viewBox="0 0 490 85">
             <defs>
                 <linearGradient id="gradient" x1="0" x2="0" y1="0" y2="1">
                     <stop offset="0%" stop-color="#f3ec78" />
@@ -54,7 +54,7 @@
                 y="50%" 
                 dominant-baseline="central" 
                 text-anchor="middle"
-                font-size="60">
+                font-size="64">
                 Hi! I'm Larry Ye
             </text>
         </svg>
@@ -129,9 +129,9 @@
 
     .transform-wrapper {
         position: relative;
-        /* Strictly budget 245px for header, footer, and gaps so card never pushes elements off screen */
-        height: min(calc(100vh - 245px), calc(100dvh - 245px), calc((100vw - 32px) * 4 / 3), 520px);
-        width: min(calc((100vh - 245px) * 3 / 4), calc((100dvh - 245px) * 3 / 4), calc(100vw - 32px), 390px);
+        /* Strictly budget 260px for larger header, footer, and gaps so card never pushes elements off screen */
+        height: min(calc(100vh - 260px), calc(100dvh - 260px), calc((100vw - 32px) * 4 / 3), 500px);
+        width: min(calc((100vh - 260px) * 3 / 4), calc((100dvh - 260px) * 3 / 4), calc(100vw - 32px), 375px);
         aspect-ratio: 3 / 4;
         border-radius: 1.5rem;
         transform-style: preserve-3d;
