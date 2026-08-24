@@ -96,7 +96,7 @@
             >
                 <div class="align-middle space-y-2 sm:space-y-3 p-4 sm:p-6 overflow-y-auto max-h-full">
                     <h1 class="text-xl sm:text-3xl font-bold w-full text-center">Who am I?</h1>
-                    <p class="font-mono text-xs sm:text-sm leading-relaxed">Hello, I'm Larry! I'm an electrical engineer, photographer, and foodie based in the Bay Area. I'm currently in my fourth year at UCLA studying electrical engineering. I'm passionate about creating beautiful and functional software, building cool electrical projects, and capturing unique moments through photography. I'm always looking for new opportunities to learn and grow, so feel free to reach out to me!</p>
+                    <p class="font-mono text-xs sm:text-sm leading-relaxed">Hello, I'm Larry! I'm an electrical engineer, photographer, and foodie based in the Bay Area. I am currently in my fourth year at UCLA studying electrical engineering. I'm passionate about creating beautiful and functional software, building cool electrical projects, and capturing unique moments through photography. I'm always looking for new opportunities to learn and grow, so feel free to reach out to me!</p>
                 </div>
             </div>
         </div>
