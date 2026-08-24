@@ -112,7 +112,7 @@
         </div>
 
         <div class="flex justify-center space-x-3 sm:space-x-4">
-            <Button label="Projects" href="/projects" />
+            <Button label="Experiences" href="/projects" />
             <Button label="Resume" href="/resume" />
         </div>
     </div>
