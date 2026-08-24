@@ -54,7 +54,7 @@
                 y="50%" 
                 dominant-baseline="central" 
                 text-anchor="middle"
-                font-size="64">
+                font-size="45">
                 Hi! I'm Larry Ye
             </text>
         </svg>
