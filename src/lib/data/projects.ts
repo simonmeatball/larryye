@@ -68,11 +68,11 @@ export const rawProjectsData: ProjectInput[] = [
     dateDisplay: 'June 2026 – September 2026',
     startDate: '2026-06',
     endDate: '2026-09',
-    description: 'Owned the hardware development of a high-power 3kW+ 48V XPO power board, executing 30-layer Allegro design, HyperLynx PI analysis, and TDR SerDes validation.',
+    description: 'Owned the hardware development of a high-power 3kW+ 48V XPO power board, executing 10-layer Allegro design, HyperLynx PI analysis, and TDR SerDes validation.',
     detailedDescription: `
       <p>As a Hardware Design Engineer Intern at <strong>Arista Networks</strong>, I drove the design and validation lifecycle of high-complexity power and interposer boards:</p>
       <ul class="list-disc list-inside space-y-2 mt-2">
-        <li><strong>3kW+ 48V XPO Power Board:</strong> Owned hardware development from initial stackup definition and OrCAD schematic capture to facilitating layout teams in executing a high-complexity 30-layer Allegro design.</li>
+        <li><strong>3kW+ 48V XPO Power Board:</strong> Owned hardware development from initial stackup definition and OrCAD schematic capture to facilitating layout teams in executing a high-complexity 10-layer Allegro design.</li>
         <li><strong>Power Integrity (PI) Analysis:</strong> Executed DC drop simulations via HyperLynx to analyze power shapes and ensure safe, uniform current delivery across flexible PCB sections.</li>
         <li><strong>High-Speed Signal Validation:</strong> Performed SerDes channel impedance validation using Time-Domain Reflectometry (TDR) to isolate channel degradation and conduct root cause analysis on signal anomalies.</li>
         <li><strong>EEPROM Interposer Board:</strong> Led end-to-end hardware definition, schematic capture, and layout with castellated holes; coordinated manufacturing and mechanical teams to fab out the board in under 10 weeks.</li>
